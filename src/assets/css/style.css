@@ -1,0 +1,311 @@
+
+.articleimg{
+  border: 1px grey solid;
+  width: 249px;
+  height: 224px;
+  margin: 57px;
+}
+  
+
+#contentarticle h4{
+  color: #000000;
+    font: normal normal normal 20px/25px "open sans",sans-serif;
+    margin-left: 64px;
+    font-size: 24px;
+  }
+
+    #contentarticle h5{
+      color: #00000094;
+      font: normal normal normal 20px/25px "open sans",sans-serif;
+      margin-left: 233px;
+      font-size: 30px;
+      margin-top: 35px;}
+
+      #contentarticle h3{
+        font: normal normal normal 14px/1.4em arial,"ｍｓ ｐゴシック","ms pgothic",돋움,dotum,helvetica,sans-serif;
+
+    color: #000000;
+    font-size: 16px;
+    margin-left: 34px;
+      }
+
+   
+      #contentarticle p{
+        color: #00000094;
+        font: normal normal normal 20px/25px "open sans",sans-serif;
+        font-size: 17px;
+        margin: 33px;
+   }  
+   .addCart{
+    background-color: #8c8;
+  color: #fff;
+  letter-spacing: .1em;
+  padding: 1em 0;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: .01em;
+  border: 1px solid transparent;
+  margin: 33px;
+
+  }
+  
+  .addCart:hover{
+    background-color: rgb(29, 112, 29);
+    color: #fff;
+    
+  }
+.titleArticle{
+  
+  font: normal normal normal 25px/1.4em "open sans",sans-serif;
+  color: #000000;
+  text-align: start;
+  line-height: 1.2em !important;
+  word-wrap: break-word;
+  margin-left: 49px;
+}
+/*ARTICULOSS*/
+.cardimg{
+    width: 197px;
+    height: 191px;
+  }
+
+  .cardimgArticle {
+    width: 250px;
+    height: 221px;
+  }
+  .preciocard{
+    margin-top: -18px;
+    color: #00000094;
+    font: normal normal normal 20px/25px "open sans",sans-serif;
+    margin-left: 90px;
+    display: block;
+    font-size: 23px;}
+  .titlecard{
+    color: #00000094;
+    font: normal normal normal 20px/25px "open sans",sans-serif;
+  }
+  .card{
+    float:left;
+    width:199px;
+    height: 301px;
+    border:1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    overflow: hidden;
+    margin: 11px;
+        margin-top: 33px;
+    background: white;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+  .cardimg:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  
+    animation: showIcon 300ms linear
+  }
+  .cardfooter{
+    padding: 2px 16px;
+  
+  }
+
+  .app-logo{
+    max-width: 39%;
+    margin-left: 176px;
+    margin-top: -22px;    
+  }
+
+  #content {
+    width: 67%;
+    float: left;
+    min-height: 663px;
+    margin-right: 48px;
+    margin-left: 70px;
+}
+
+#slider{
+    background-image: url('../images/bannermovil.jpeg');
+    background-size: 371px;    height: 249px;
+    width: 100%;
+    text-align: center;
+
+}
+
+#slider span{
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    font-size: 33px;
+}
+
+#logo span{
+  line-height: 1em;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: normal;
+
+}
+.inner-scroll {
+  --offset-top: 39px;
+  --offset-bottom: 5px;
+}
+.scroll-y{
+  --offset-top: 39px;
+  --offset-bottom: 5px;
+}
+
+
+
+
+#footer{
+  
+  background: #333;
+  padding-top:5px;
+  padding-bottom: 40px;
+  text-align: center;
+color:white;
+
+
+ 
+}
+#footer .subheader{
+  color:white;
+}
+#footer .wrap > div{
+  float:left;
+  width: 320px;
+  height: 370px;
+  margin:40px;
+  text-align: center;
+  color:white;
+  font-family:"TrebuchetMS"
+
+
+}
+#footer ul {
+  margin: 0px auto;
+  width: 293px;
+  display:block;
+  list-style: none;
+  margin-top: 20px;
+   margin-bottom: 20px;
+}
+#footer ul li{
+  float:left;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 300ms;
+}
+#footer ul li:hover{
+opacity: 0.8;
+transform: scale(1.1, 1.1);
+
+}
+
+
+
+#background-content{
+  --offset-top: 39px;
+  --offset-bottom: 5px;
+}
+
+/* 'Open Sans' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: #456;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+  width: 90%;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #28d;
+}
+
+.login-header {
+  background: #28d;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #28d;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+
+
+
+
+
+
+
+

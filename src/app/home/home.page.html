@@ -1,0 +1,63 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>HOME</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="slider">
+
+  </div>
+  <div id="content">
+
+    <div class="card" *ngFor= "let article of articles" [routerLink]="['/article',article._id]">
+      <img  class="cardimg" src="{{url + 'get-image/'+  article.imagen}}" /> 
+
+ 
+       <div class="cardfooter">
+
+<p class="titlecard"><b>{{article.Name}}</b></p>
+<p class="preciocard">{{article.Precio__c}}€</p>
+
+</div>        
+           
+        </div>
+
+ 
+  </div>
+
+
+</ion-content>
+     <!-- Footer without a border -->
+
+
+<ion-footer>
+      
+  <div id="footer">
+
+      <div class="wrap">
+           <h2 class="subheader">Contacto</h2>
+           <p>Envianos un mensaje a cualquiera de estas redes sociales :)</p>
+           <ul class="network">
+               <li>
+    
+                   <a href=""> <img src="../../assets/images/twitter.png"></a>
+               </li>
+                 <li>
+    
+                   <a href=""> <img src="../../assets/images/instagram.png" /></a>
+               </li>
+                 <li>
+    
+                   <a href=""> <img src="../../assets/images/facebook.png" /></a>
+               </li>
+           </ul>
+      </div>
+    
+       </div> 
+
+</ion-footer>

@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="login">
+    <div class="login-triangle"></div>
+    
+    <h2 class="login-header"><img class="logologin" src="../../assets/images/logo.jpg"/> </h2>
+  
+    <form #frmLogin="ngForm" class="login-container" (ngSubmit)="onLogin(frmLogin)">
+      <p><input type="email" name="email" placeholder="Email" ngModel required></p>
+      <p><input type="password" name="password" placeholder="Password" ngModel required></p>
+      <p><input type="submit" value="Log in"></p>
+    </form>
+    <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <div class="text-danger " [routerLink]="['/registre']">Register</div></small> </div>
+    <ion-button (click)="presentAlert()">Basic Alert</ion-button>
+
+  </div>
+
+  
+</ion-content>

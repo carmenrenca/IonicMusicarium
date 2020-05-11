@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registre</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="login">
+    <div class="login-triangle"></div>
+    
+    <h2 class="login-header"><img class="logologin" src="../../assets/images/logo.jpg"/> </h2>
+  
+    <form #frmLogin="ngForm" class="login-container" (ngSubmit)="onRegistre(frmLogin)">
+      <p><input type="nombre" name="nombre" placeholder="Nombre" ngModel required></p>
+      <p><input type="apellido" name="apellido" placeholder="Apellido" ngModel required></p>
+      <p><input type="telefono" name="telefono" placeholder="Telefono" ngModel required></p>
+      <p><input type="direccion" name="direccion" placeholder="Direccion" ngModel required></p>
+      <p><input type="email" name="email" placeholder="Email" ngModel required></p>
+      <p><input type="password" name="password" placeholder="Password" ngModel required></p>
+      <p><input type="submit" value="Registrarse"></p>
+    </form>
+    <div class="row mb-4 px-3"> <small class="font-weight-bold"><div class="text-danger " [routerLink]="['/login']">Login</div></small> </div>
+
+  </div>
+
+  
+</ion-content>
