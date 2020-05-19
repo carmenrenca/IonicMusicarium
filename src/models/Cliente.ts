@@ -1,7 +1,7 @@
 export class Cliente{
 
 
-    constructor(public Phone:String, public Email:String , public Address:string , public Username:string, public LastName:string, public Alias:string){
+    constructor(public Phone:String, public Email:String , public direccion:string , public Username:string, public LastName:string, public Alias:string){
  /** this.Username=Username;
        this.Alias=Alias;
         this.Email=Email;

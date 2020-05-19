@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
  
     {
       title: 'Carrito',
-      url: '/folder/Outbox',
+      url: '/carro',
       icon: 'basket'
     },
     {

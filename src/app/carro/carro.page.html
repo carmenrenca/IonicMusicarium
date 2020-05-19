@@ -1,0 +1,44 @@
+
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Carro</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="tablecarro">
+    <h4 class="titlecesta">1. Cesta</h4>
+  </div>
+
+  <div>
+    <div id="productInfoCesta" *ngFor= "let article of articlescarro">
+      <a class="removecarro"> </a>
+      <ion-icon  class="deletearticlecarro" name="close-circle" (click)="eliminarcarro(article)" ></ion-icon>
+      <div class="imgcarro">
+        <img  class="cardimg" src="{{url + 'get-image/'+  article.imagen}}" /> 
+<h2>{{article.Name}}</h2>
+ <div class="controles">
+<h2> {{article.unidad}}</h2>
+
+  <a href="" class="buttonunidad">+</a> <a href="" class="buttonunidad">-</a>
+ </div>
+<h3>{{article.Precio__c}}€</h3>
+      </div>
+  </div>
+
+<div id="totales">
+  <h5>Subtotal: {{suma}}</h5>
+<h2>TOTAL: {{suma}}</h2>
+</div>
+
+  
+  </div>
+  <div class="buttoncarro">
+
+    <a class="addCart"  (click)="tramitarpedido()" >Tramitar Compra</a>
+    <a class="button2"  (click)="continuarCompra()" >Continuar Comprando</a>
+    <a class="button3"  (click)="eliminarTodoElCarro()" >Vaciar Cesta</a>
+  </div>
+</ion-content>

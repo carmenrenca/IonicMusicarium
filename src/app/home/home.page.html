@@ -10,7 +10,7 @@
 <ion-content [fullscreen]="true">
 
   <div id="slider">
-
+    <h1>Musicarium</h1>
   </div>
   <div id="content">
 
@@ -21,6 +21,8 @@
        <div class="cardfooter">
 
 <p class="titlecard"><b>{{article.Name}}</b></p>
+<a  ><img src='../assets/images/bolsa.png' (click)="addcarro()" class="logofav" alt="Logotipo"/></a>   
+
 <p class="preciocard">{{article.Precio__c}}€</p>
 
 </div>        

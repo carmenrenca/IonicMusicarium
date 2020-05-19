@@ -33,5 +33,12 @@ export class ArticleService{
     getcategori():Observable<any>{
         return this._http.get(this.url+'articleCategori');
     }
+
+    createpedido( cliente, articulos, total):Observable<any>{
+        console.log(cliente);
+        console.log(articulos);
+        console.log(total);
+        return this._http.post(this.url+'pedido/', {Status__c:"Pendiente", Infocliente:cliente, Ciudad__c:cliente.direccion,articulos: articulos, total__c:total, email:cliente.email});
+    }
 }
 

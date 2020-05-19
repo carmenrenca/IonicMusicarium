@@ -14,8 +14,8 @@
       <p><input type="password" name="password" placeholder="Password" ngModel required></p>
       <p><input type="submit" value="Log in"></p>
     </form>
-    <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <div class="text-danger " [routerLink]="['/registre']">Register</div></small> </div>
-    <ion-button (click)="presentAlert()">Basic Alert</ion-button>
+    <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? </small> </div>
+    <ion-button [routerLink]="['/registre']" >Register</ion-button>
 
   </div>
 

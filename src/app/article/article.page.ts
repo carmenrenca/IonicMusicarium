@@ -11,8 +11,9 @@ import {global} from '../services/global';
 })
 export class ArticlePage implements OnInit {
   public url:string;
-  public article: Article= new Article("","","","");
-  constructor(public _articleService:ArticleService, private _route: ActivatedRoute, private _router: Router) { this.url=global.url}
+  public productos:any[]=[];
+  public article: Article= new Article("","","","",1);
+  constructor(public _articleService:ArticleService, private  router:  Router, private _route: ActivatedRoute, private _router: Router) { this.url=global.url}
 
   ngOnInit() {
 this._route.params.subscribe(params=>{
@@ -37,5 +38,53 @@ this._route.params.subscribe(params=>{
 
 
   }
+ 
 
+  addcarro(){
+    var aux =false;
+ this.productos = this.obtenerProductosLocalStorage();
+      this.productos.forEach(function(entry) {
+
+ if(entry._id== this.article._id){
+
+ 
+       console.log("coincide"+entry._id)
+   
+   this.article.unidad=entry.unidad+1;
+ 
+           localStorage.setItem('carrito', JSON.stringify(this.productos));
+      console.log(this.productos)
+       aux=true;      
+ }
+}, this);
+
+
+     
+  if(aux==false){
+     //Agregar el producto al carrito
+ this.article.unidad=1;
+      this.productos.push( this.article);
+        //Agregamos al LS
+    localStorage.setItem('carrito', JSON.stringify(this.productos));
+
+  }
+
+ this.router.navigateByUrl('/carro');
+
+  
+  }
+
+        //Comprobar que hay elementos en el LS
+        obtenerProductosLocalStorage(){
+          let productoLS;
+  
+          //Comprobar si hay algo en LS
+          if(localStorage.getItem('carrito') === null){
+              productoLS = [];
+          }
+          else {
+              productoLS = JSON.parse(localStorage.getItem('carrito'));
+          }
+          return productoLS;
+      }
 }

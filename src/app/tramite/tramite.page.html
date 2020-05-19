@@ -1,0 +1,25 @@
+
+
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Tramite</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="tablecarro">
+    <h4 class="titlecesta">2. Envio</h4>
+  </div>
+  <div class="tramite">
+
+    <p>Enviaremos su pedido a esta dirección: </p>
+<p>{{direccion}}</p>
+ 
+
+<input class="changedireccionbutton"  type="submit" value="Cambiar Dirección">
+<a class="addCart"  (click)="finalizarpedido()" >Finalizar Compra</a>
+  </div>
+
+</ion-content>
